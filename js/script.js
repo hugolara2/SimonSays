@@ -1,8 +1,13 @@
-const celeste = document.getElementById("celeste");
-const violeta = document.getElementById("violeta");
-const naranja = document.getElementById("naranja");
-const verde = document.getElementById("verde");
-const btnEmpezar = document.getElementById("btnEmpezar");
+var celeste, violeta, naranja, verde, bntEmpezar;
+
+window.onload = function(){
+    celeste = document.getElementById("celeste");
+    violeta = document.getElementById("violeta");
+    naranja = document.getElementById("naranja");
+    verde = document.getElementById("verde");
+    btnEmpezar = document.getElementById("btnEmpezar");
+
+}
 
 class Juego{
     constructor(){
@@ -31,3 +36,5 @@ function empezar(){
     window.juego = new Juego();
 
 }
+
+
