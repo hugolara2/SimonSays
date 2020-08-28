@@ -72,6 +72,9 @@ body{
     left: calc(50% - 200px);
 }
 
+.hide {
+    display: none;
+}
 
 
 

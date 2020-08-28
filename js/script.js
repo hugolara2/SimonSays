@@ -1,4 +1,4 @@
-var celeste, violeta, naranja, verde, bntEmpezar;
+var celeste, violeta, naranja, verde, btnEmpezar;
 
 window.onload = function(){
     celeste = document.getElementById("celeste");
