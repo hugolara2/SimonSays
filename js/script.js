@@ -1,5 +1,5 @@
 var celeste, violeta, naranja, verde, btnEmpezar;
-const ULTIMO_NIVEL = 2;
+const ULTIMO_NIVEL = 20;
 
 window.onload = () => {
     celeste = document.getElementById("celeste");
