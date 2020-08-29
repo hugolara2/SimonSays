@@ -1,5 +1,5 @@
 var celeste, violeta, naranja, verde, btnEmpezar;
-const ULTIMO_NIVEL = 20;
+const ULTIMO_NIVEL = 2;
 
 window.onload = () => {
     celeste = document.getElementById("celeste");
@@ -10,9 +10,9 @@ window.onload = () => {
 
 }
 
-
 class Juego{
     constructor(){
+        this.inicializar = this.inicializar.bind(this);
         this.inicializar();
         this.generarSecuencia();
         setTimeout(this.nextlevel, 1000);
@@ -108,15 +108,25 @@ class Juego{
                 this.nivel++;
                 this.eliminarEvento();
                 if(this.nivel === (ULTIMO_NIVEL + 1)){
-                    //Gano
+                    this.ganoElJuego();
                 }
                 else{
                     setTimeout(this.nextlevel, 2000);
                 }
             }
         }else{
-            //Perdio
+            this.perdioElJuego();
         }
+    }
+
+    ganoElJuego(){
+        alert('Felicidades has ganado el juego')
+        location.reload();
+    }
+
+    perdioElJuego(){
+        alert('Por desgracia ha perdido :c')
+        location.reload();
     }
 
 }
